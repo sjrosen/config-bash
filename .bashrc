@@ -53,3 +53,7 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+if [ -f ~/.config/brew/init ]; then
+    source ~/.config/brew/init
+fi
