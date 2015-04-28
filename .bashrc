@@ -1,3 +1,9 @@
+if [ -n "$IsLinux" ]; then
+   umask 077   # file protection no read or write for others
+               # umask 022 is no write but read for others
+   ulimit -c 0
+fi
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
