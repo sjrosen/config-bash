@@ -64,10 +64,12 @@ if [ -f /etc/bash_completion ] ; then
    . /etc/bash_completion
 fi
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
-
-if [ -f ~/.config/brew/init ]; then
-    source ~/.config/brew/init
+# on Mac with homebrew
+if [ -n "$IsMac" && hash brew 2>/dev/null ]; then
+   if [ -f $(brew --prefix)/etc/bash_completion ]; then
+       . $(brew --prefix)/etc/bash_completion
+   fi
+   if [ -f ~/.config/brew/init ]; then
+       source ~/.config/brew/init
+   fi
 fi
