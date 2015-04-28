@@ -6,6 +6,6 @@ if [ ! -z "$EDITOR" ] ; then
    export VISUAL=$EDITOR
 fi
 
-if [ -f $HOME/.bashrc ] ; then
-  . $HOME/.bashrc
+if [ -f $HOME/.bashrc ]; then
+   source $HOME/.bashrc
 fi

@@ -1,12 +1,10 @@
-#------------#
-#   bash     #
-#------------#
-
 umask 077   # file protection no read or write for others
             # umask 022 is no write but read for others
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+
+export CLICOLOR=1
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -32,7 +30,4 @@ case "$TERM" in
     PS1='\n${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
     ;;
 esac
-
-# Put any local aliases or settings below this line.
-export CLICOLOR=1
 export EDITOR=vim
