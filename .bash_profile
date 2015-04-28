@@ -1,10 +1,8 @@
 # give ^R some data to work with
 export HISTSIZE=5000
 
-# Some programs honor VISUAL, so set this if EDITOR is set.
-if [ ! -z "$EDITOR" ] ; then
-   export VISUAL=$EDITOR
-fi
+export EDITOR=vim
+export VISUAL=$EDITOR
 
 if [ -f $HOME/.bashrc ]; then
    source $HOME/.bashrc

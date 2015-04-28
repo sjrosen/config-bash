@@ -30,4 +30,3 @@ case "$TERM" in
     PS1='\n${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
     ;;
 esac
-export EDITOR=vim
