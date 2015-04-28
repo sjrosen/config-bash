@@ -43,10 +43,6 @@ else
 fi
 
 PS1="\n$violet$(virtualenv_prompt)$c_host$(computer_name)$blue\w$yellow \$$c_reset "
-# export PS1="\n$(virtualenv_prompt)$(computer_name):\w> "
-#export PS1="\[$blue\]$(virtualenv_prompt)\[$red\]$(computer_name)\[$black\]:\[$blue\]\w> \[$black\]"
-# vex autocompletion (not working currently)
-# eval "$(vex --shell-config bash)"
 
 export CLICOLOR=1
 
