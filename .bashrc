@@ -46,14 +46,14 @@ PS1="\n$violet$(virtualenv_prompt)$c_host$(computer_name)$blue\w$yellow \$$c_res
 
 export CLICOLOR=1
 
-# cache pip-installed packages to avoid re-downloading
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
 set -o noclobber
+
+# cache pip-installed packages to avoid re-downloading
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] ; then
