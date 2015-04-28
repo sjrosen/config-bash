@@ -67,7 +67,7 @@ if [ -f /etc/bash_completion ] ; then
 fi
 
 # on Mac with homebrew
-if [ -n "$IsMac" && hash brew 2>/dev/null ]; then
+if [ -n "$IsMac" ] && hash brew 2>/dev/null; then
    if [ -f $(brew --prefix)/etc/bash_completion ]; then
        . $(brew --prefix)/etc/bash_completion
    fi
