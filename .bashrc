@@ -31,7 +31,7 @@ function virtualenv_prompt() {
 
 function computer_name() {
     if [ -z "$COMPUTER_NAME" ]; then
-        export COMPUTER_NAME=`scutil --get ComputerName`
+       export COMPUTER_NAME=$(hostname -s)
     fi
     echo "${COMPUTER_NAME##*/} "
 }
