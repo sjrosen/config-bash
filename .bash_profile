@@ -7,6 +7,6 @@ export PATH=`echo "/usr/local/bin:$PATH" | sed -e 's|:/usr/local/bin||g'`
 export EDITOR=vim
 export VISUAL=$EDITOR
 
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
+if [ -f $HOME/.bashrc ]; then
+   source $HOME/.bashrc
 fi
