@@ -1,3 +1,6 @@
+# append to the history file, don't overwrite it
+shopt -s histappend
+
 # Solarized color names
 base03='\[\033[1;30m\]'
 base02='\[\033[0;30m\]'
