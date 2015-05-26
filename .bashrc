@@ -52,7 +52,10 @@ else
     c_host=$green
 fi
 
-PS1="\n$violet$(virtualenv_prompt)$c_host$(computer_name)$blue\w$yellow \$$c_reset "
+function set_prompt() {
+   export PS1="\n$violet$(virtualenv_prompt)$c_host$(computer_name)$blue\w$yellow \$$c_reset "
+}
+export PROMPT_COMMAND=set_prompt
 
 export CLICOLOR=1
 
@@ -68,6 +71,7 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # setup for python virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 source /usr/local/bin/virtualenvwrapper.sh
 
 # enable bash completion in interactive shells
