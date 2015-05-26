@@ -65,9 +65,6 @@ shopt -s checkwinsize
 
 set -o noclobber
 
-# cache pip-installed packages to avoid re-downloading
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-
 # setup for python virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
