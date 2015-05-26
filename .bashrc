@@ -65,6 +65,11 @@ set -o noclobber
 # cache pip-installed packages to avoid re-downloading
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
+# setup for python virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/src
+source /usr/local/bin/virtualenvwrapper.sh
+
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] ; then
    . /etc/bash_completion
