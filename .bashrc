@@ -52,10 +52,7 @@ else
     c_host=$green
 fi
 
-function set_prompt() {
-   export PS1="\n$violet$(virtualenv_prompt)$c_host$(computer_name)$blue\w$yellow \$$c_reset "
-}
-export PROMPT_COMMAND=set_prompt
+PS1="\n$violet$(virtualenv_prompt)$c_host$(computer_name)$blue\w$yellow \$$c_reset "
 
 export CLICOLOR=1
 
