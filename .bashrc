@@ -70,7 +70,6 @@ export ANACONDA_WORKON_HOME=/usr/local/miniconda3/envs
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-source /usr/local/bin/virtualenvwrapper.sh
 
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] ; then
