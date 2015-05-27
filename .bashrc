@@ -65,7 +65,8 @@ shopt -s checkwinsize
 
 set -o noclobber
 
-# setup for python virtualenvwrapper
+# setup for python virtualenv and conda
+export ANACONDA_WORKON_HOME=/usr/local/miniconda3/envs
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
 export VIRTUAL_ENV_DISABLE_PROMPT=1
